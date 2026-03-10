@@ -1,0 +1,83 @@
+/*====================
+Starter
+====================*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+    }
+/*====================
+Typograpy
+====================*/
+h2 {
+    margin-top: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*====================
+Nav
+====================*/
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 20px;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+nav a {
+    background-color: bisque;
+    border: bisque solid 8px;
+    border-radius: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/*====================
+API Section 
+====================*/
+#DogBreeds {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.DogBreedUL {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.DogBreedUL li {
+    background: #fafafa;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-weight: 500;
+}
